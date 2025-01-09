@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.contenedor-principal {
+    display: flex;
+}
+
+.contenido {
+    width: 200px;
+    max-width: 200px;
+    background-color:  rgba(50, 84, 105, 1);
+    padding: 1em;
+    margin: 2em;
+    box-sizing: border-box;
+    border-radius: 10px;
+    color: #fff;
+
+
+    height: 100vh;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido img {
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.contenido .linea-horizontal {
+    width: 80%;
+    border: 1px solid #808080;
+    opacity: 0.2;
+    margin: 20px;
+}
+
+.contenido a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+    padding: 5px;
+}
+
+.contenido a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contenido .icono-panel {
+    margin-right: 10px;
+}
+
+.contenedor {
+    width: 80%;
+    padding: 10px;
+}
+
+.contenedor .cabecera {
+    display: flex;
+}
+
+.contenedor .bienvenida {
+    color: #808080;
+    padding-bottom: 10px;
+
+}
+
+.contenedor .paginas {
+    padding: 10px;
+    display: flex;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.boton-cerrar-sesion{
+    background-color: rgba(50, 84, 105, 1);
+    color: #fff;
+    margin-left: 800px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    width: 15%;
+    font-size: 15px;
+}
+
+.boton-cerrar-sesion:hover {
+    background-color: #f0d399;
+    color: rgba(50, 84, 105, 1);;
+}
+
+.contenedor .paginas {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease; 
+}
+
+.contenedor .paginas{
+    color: #808080; 
+}
+
+.contenedor .paginas p {
+    margin: 0;
+}
+
+.contenedor .paginas .texto {
+    margin-left: 5px;
+    color: #808080;
+}
+
+.contenedor .contenido-pagina {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.contenedor .contenido-pagina .ganancias {
+    font-size: 20px;
+    color: white;
+}
+
+.contenedor .contenido-pagina section {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.contenido-pagina .estadistica1 {
+    background-color: rgba(50, 84, 105, 1);
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.contenido-pagina .estadistica1 p{
+    padding-right: 150px;
+}
+
+.contenido-pagina .estadistica2 {
+    background-color: rgba(50, 84, 105, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenido-pagina .estadistica2 p{
+    padding-right: 150px;
+}
+
+.contenedor .tabla {
+    margin-left: 20px;
+    border: black;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contenedor .tabla p{
+    color: #808080;
+}
+
+.contenedor th,
+td {
+    border: black;
+    padding: 8px;
+    text-align: left;
+}
+
+.contenedor .estadistica3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* actualizarUsuario.php */
+
+/* Estilos para el formulario */
+.grupoInput {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: rgba(50, 84, 105, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0d399;
+}
+
+/* Ajuste de estilos para el botón en el último grupoInput */
+.grupoInput:last-child button {
+    margin-top: 10px;
+}
+
+.table-responsive {
+    overflow-x: visible;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-sm th,
+.table-sm td {
+    padding: 0.3rem;
+}
+
+.table-bordered {
+    border-collapse: collapse;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    vertical-align: top;
+}
+
+.table-bordered thead th {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.botonEliminar button {
+    background-color: red;
+}
+
+/* Estilo general del formulario */
+section {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo de los grupos de input */
+.grupoInput {
+    margin-bottom: 15px;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los campos de entrada de texto y textarea */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Estilo de los mensajes de error */
+.error {
+    color: red;
+    font-size: 12px;
+}
