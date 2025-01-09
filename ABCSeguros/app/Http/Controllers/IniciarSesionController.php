@@ -17,7 +17,7 @@ class IniciarSesionController extends Controller
 
     public function login(Request $request)
     {
-        $credentials = $request->only('email', 'password');
+        $credentials = $request->only('usuario', 'password');
 
         if (Auth::attempt($credentials, $request->has('remember'))) {
             // Autenticación exitosa
